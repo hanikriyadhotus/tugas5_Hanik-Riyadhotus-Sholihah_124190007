@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_data"
+    android:background="@android:color/holo_purple">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT DATA KARYAWAN"
+        android:id="@+id/jdl2"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jdl2"
+        android:gravity="bottom"
+        android:text="Nama : "
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Alamat : "
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/et_nama"
+        android:padding="5dp"
+         />
+
+    <TextView
+        android:id="@+id/tv_usia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="Usia: "
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/et_alamat"
+        android:padding="5dp"/>
+
+
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nama"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:hint="masukkan nama"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/et_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alamat"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:hint="masukkan alamat"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/et_usia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_usia"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:hint="masukkan usia"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        android:layout_below="@id/et_usia"
+        android:background="#8B0000"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_bright">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INPUT DATA KARYAWAN"
+            android:id="@+id/jdl1"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="80dp"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_below="@id/jdl1"/>
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Alamat : "
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/et_nama"
+            android:padding="5dp"
+            tools:ignore="UnknownId" />
+        <TextView
+            android:id="@+id/tv_usia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Usia: "
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/et_alamat"
+            android:padding="5dp"
+            tools:ignore="UnknownId" />
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama"
+            android:textSize="18sp"
+            android:hint="masukkan nama"
+            android:textColorHint="@color/white"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:hint="masukkan alamat"
+            android:textColorHint="@color/white"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/et_usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_usia"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:hint="masukkan usia"
+            android:textColorHint="@color/white"
+            android:padding="10dp"/>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/et_usia"
+            android:background="#8B0000"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/btn_lihat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="lihat data"
+            android:layout_below="@+id/et_usia"
+            android:layout_toRightOf="@id/btn_submit"
+            android:background="#8B0000"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</LinearLayout>
